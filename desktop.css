@@ -4,13 +4,25 @@
 .main--card-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 .main--card-container {
   justify-content: center;
+  display: flex;
+  width: 600px;
 }
-.main--arrow-rigth {
-  left: 0px;
+.main--card{
+  margin-bottom: 0px;
 }
 .main--carousel-image {
   justify-content: center;
+}
+
+.main--list {
+  margin-bottom: 0;
+}
+
+.main--card-number span {
+  display: block;
+  left: calc(50% - 20px);
 }

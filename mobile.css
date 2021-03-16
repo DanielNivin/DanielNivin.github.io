@@ -35,7 +35,7 @@ html {
 }
 
 .header img {
-  width: 150px;
+  width: 170px;
   margin-top: 29px;
   align-self: center;
 }
@@ -107,8 +107,8 @@ html {
   text-align: center;
 }
 .main--section-primary figure {
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 50px;
   margin: 0 auto;
   padding-top: 54px;
 }
@@ -124,7 +124,7 @@ html {
 }
 
 .main--section-primary .main--primary-title {
-  margin-top: 9.8rem;
+  margin-top: 12rem;
   color: var(--warm-black);
   font-weight: bold;
   font-size: 2.4rem;
@@ -141,22 +141,15 @@ html {
 /*--Main List--*/
 .main--section-primary .main--card-container {
   margin: 0 auto;
-  padding-top: 15px;
-  display: flex;
   height: auto;
-  gap: 10px;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-  margin: 0 3rem;
-  padding-left: 20px;
 }
 .main--list {
-  scroll-snap-align: center;
   min-width: 190px;
-  max-width: 300px;
-  width: 300px;
+  max-width: 190px;
+  width: 190px;
   text-align: left;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 .main--list .main--list-title {
   color: #ff9536;
@@ -174,25 +167,15 @@ html {
 .main--list li {
   margin: 8px 0;
 }
-/*--arrow-rigth--*/
-
-.main--arrow-rigth {
-  min-width: 30px;
-  width: 30px;
-  position: relative;
-  left: -16px;
-}
 
 /*--card de cotización--*/
 
 .main--card-presupuesto {
-  scroll-snap-align: center;
-  min-width: 190px;
-  max-width: 300px;
-  width: 300px;
+  width: 250px;
   box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
   border-radius: 8px;
   position: relative;
+  margin: 0 auto;
 }
 
 .main--card-title {
@@ -248,15 +231,17 @@ html {
   text-align: center;
   position: relative;
   margin-top: 72px;
-  padding-bottom: 1rem;
+  padding-bottom: 2.5rem;
 }
 .main--batata {
   width: 4.2rem;
-  height: 2.4rem;
-  background-image: url("./assets/icon/papa.svg");
+  height: 3.8rem;
+  background-image: url("./assets/img/logo-house-orange.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: absolute;
-  top: -1.2rem;
+  top: -2rem;
   left: calc(50% - 2.1rem);
 }
 
@@ -279,15 +264,21 @@ html {
   margin-bottom: 3.2rem;
 }
 
-.main--card {
+.main--card-content {
   width: 90%;
   margin: 0 auto;
+}
+
+.main--card {
+  width: 100%;
   background-color: var(--war-black-1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   padding: 1.6rem;
   margin-bottom: 1.6rem;
+  
 }
+
 .main--card-icon {
   width: 2.4rem;
   padding-bottom: 1rem;
@@ -387,7 +378,7 @@ html {
 
 .footer--container {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   height: 150px;
   display: flex;
   justify-content: space-between;
@@ -405,9 +396,23 @@ html {
 .footer--text p {
   margin: 5px 0;
 }
+.footer--text .footer--number {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url("./assets/img/whatsapp-icon.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 3px;
+  position: relative;
+  top: 2px;
+}
 
-.footer--icon {
+.footer--img {
   width: 64px;
-  height: 50px;
-  background-image: url("./assets/icon/logo-footer.svg");
+  height: 60px;
+
+}
+.footer--img img {
+  width: 100%;
 }
