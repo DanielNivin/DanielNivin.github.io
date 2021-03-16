@@ -1,0 +1,16 @@
+.main--table-container {
+  justify-content: center;
+}
+.main--card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main--card-container {
+  justify-content: center;
+}
+.main--arrow-rigth {
+  left: 0px;
+}
+.main--carousel-image {
+  justify-content: center;
+}
