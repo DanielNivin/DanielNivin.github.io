@@ -254,7 +254,7 @@ html {
   font-weight: bold;
 }
 
-.main--secundari-text {
+.main--secundari .main--secundari-text {
   font-weight: bold;
   color: #808080;
   font-size: 1.4rem;
@@ -276,7 +276,6 @@ html {
   border-radius: 4px;
   padding: 1.6rem;
   margin-bottom: 1.6rem;
-  
 }
 
 .main--card-icon {
@@ -307,7 +306,7 @@ html {
   width: 100%;
   min-width: 320px;
   height: 387px;
-  background-image: url("./assets/img/construccion.jpg");
+  background-image: url("./assets/img/portada.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,11 +314,13 @@ html {
 }
 
 .main--img h2 {
+  width: 90%;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 2.6rem;
   color: var(--just-white);
-  padding-top: 64px;
+  padding-top: 45px;
+  margin: 0 auto;
 }
 
 /*--Tercera sección--*/
@@ -357,15 +358,24 @@ html {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  margin: 0 10px;
 }
 .main--carousel-image figure {
   min-width: 190px;
   max-width: 300px;
   width: 300px;
+  margin: 10px;
 }
 .main--carousel-image figure img {
   width: 100%;
   height: 200px;
+  box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
+}
+.main--carousel-image figure figcaption {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
 }
 /*------------------------footer-------------------*/
 
@@ -411,7 +421,6 @@ html {
 .footer--img {
   width: 64px;
   height: 60px;
-
 }
 .footer--img img {
   width: 100%;
