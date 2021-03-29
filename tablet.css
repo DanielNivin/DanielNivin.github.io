@@ -1,0 +1,39 @@
+.main--table-container {
+  justify-content: center;
+}
+.main--card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.main--card-container {
+  justify-content: center;
+  display: flex;
+  width: 600px;
+}
+.main--card {
+  margin-bottom: 0px;
+}
+.main--carousel-image {
+  justify-content: center;
+}
+
+.main--list {
+  margin-bottom: 0;
+}
+
+.main--card-number span {
+  display: block;
+  left: calc(50% - 20px);
+}
+/*carousel imagenes*/
+
+.main--carousel-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel--primary-row {
+  min-width: 39.2vw;
+  scroll-snap-align: inherit;
+}

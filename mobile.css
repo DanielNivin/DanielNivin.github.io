@@ -351,31 +351,84 @@ html {
   margin-bottom: 5rem;
 }
 
-/*--aquí van las imágenes--*/
+/*--SLIDER CONTAINER --*/
+.main--section-carousel {
+  background-color: var(--war-black-1);
+}
 .main--carousel-image {
-  text-align: center;
-  display: flex;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-  margin: 0 10px;
-}
-.main--carousel-image figure {
-  min-width: 190px;
-  max-width: 300px;
-  width: 300px;
-  margin: 10px;
-}
-.main--carousel-image figure img {
   width: 100%;
-  height: 200px;
-  box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
 }
-.main--carousel-image figure figcaption {
+.main--slider-container {
+  display: flex;
+  overflow-x: scroll; /* establece lo que se muestra cuando el contenido desborda los bordes izquierdo y derecho de un elemento a nivel de bloque */
+  overscroll-behavior-x: contain; /* la propiedad de css overscroll-behabior establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento. Es una abreviatura de overscroll-behavior-x y overscroll-behavior-y. */
+  scroll-snap-type: x proximity; /* La propiedad CSS scroll-snap-type establece qué tan estrictamente se aplican los puntos de snap en el contenedor de desplazamiento en caso de que haya uno */
+  scroll-behavior: smooth; /* crea una animación al hacer el scroll */
+  overflow: hidden; /* quita el diseño del scroll del contenedor */
+}
+.carousel--primary-row {
+  padding-top: 6vw;
+  min-width: 100vw;
+  scroll-snap-align: center;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.main--slider-container .carousel--primary-row figure {
+  width: 88%;
+  height: 85%;
+  margin: 0 auto;
+  display: flex;
+}
+.main--slider-container .carousel--primary-row figure img {
+  width: 100%;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.main--carousel-image figure img:hover {
+  transform: scale(1.15);
+}
+
+.main--slider-container p {
+  margin-top: calc(10%);
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 500;
-  color: #757575;
+  color: #b5b0ac;
+  padding: 0 10px;
+}
+
+#main--btn-left,
+#main--btn-rigth {
+  position: absolute;
+  padding-top: 3px;
+  width: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 4rem;
+  margin: 0 20px;
+  background: var(--orange);
+  color: var(--war-black-1);
+  z-index: 500;
+  outline: none;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+#main--btn-left:hover,
+#main--btn-rigth:hover {
+  color: var(--war-black-1);
+  padding: 8px 0;
+}
+#main--btn-left {
+  left: 0;
+}
+#main--btn-rigth {
+  right: 0;
 }
 /*------------------------footer-------------------*/
 

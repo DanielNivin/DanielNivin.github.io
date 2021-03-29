@@ -12,8 +12,17 @@
     />
     <link
       rel="stylesheet"
+      href="tablet.css"
+      media="screen and (min-width:600px"
+    />
+    <link
+      rel="stylesheet"
       href="desktop.css"
-      media="screen and (min-width:900px"
+      media="screen and (min-width:1100px"
+    />
+    <link
+      rel="stylesheet"
+      href="./dependencies/fontawesome-free-5.15.3-web/css/all.min.css"
     />
     <title>Document</title>
   </head>
@@ -127,37 +136,79 @@
           Servicio confiable y de calidad con estándares de seguridad.
         </p>
       </section>
-      <section class="main--carousel-image">
-        <figure class="carousel--primary-row">
-          <img src="./assets/img/imagen-drywall.jfif" alt="San Isidro" />
-          <figcaption>Instalación de Drywall (La Molina)</figcaption>
-        </figure>
-        <figure class="carousel--primary-row">
-          <img src="./assets/img/imagen-pastelero.jfif" alt="La Molina" />
-          <figcaption>Instalación de Ladrillo pastelero (La Molina)</figcaption>
-        </figure>
-        <figure class="carousel--second-row">
-          <img src="./assets/img/imagen-deco.jfif" alt="Santa Anita" />
-          <figcaption>
-            Detalle en Drywall para luces indirectas (Lima Centro)
-          </figcaption>
-        </figure>
-        <figure class="carousel--second-row">
-          <img src="./assets/img/imagen-valdosa.jpg" alt="Santa Anita" />
-          <figcaption>Techo acústico (Lima Centro)</figcaption>
-        </figure>
-        <figure class="carousel--third-row">
-          <img src="./assets/img/imagen-dintel.jfif" alt="Santa Anita" />
-          <figcaption>Intalación de cobertura en Drywall (Breña)</figcaption>
-        </figure>
-        <figure class="carousel--third-row">
-          <img src="./assets/img/imagen-candelabro.jfif" alt="Santa Anita" />
-          <figcaption>
-            Instalación de cielo razo con detalles (San Isidro)
-          </figcaption>
-        </figure>
+
+      <!-- Slider mis proyectos -->
+      <section class="main--section-carousel">
+        <div class="main--carousel-image">
+          <button id="main--btn-left">
+            <span class="fas fa-angle-left"></span>
+          </button>
+
+          <div class="main--slider-container">
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/imagen-drywall.jfif" alt="San Isidro" />
+              </figure>
+              <p>Instalación de Drywall (La Molina)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img
+                  src="./assets/img/imagen-pastelero.jfif"
+                  alt="San Isidro"
+                />
+              </figure>
+              <p>Instalación de Ladrillo pastelero (La Molina)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/imagen-deco.jfif" alt="San Isidro" />
+              </figure>
+              <p>Detalle en Drywall para luces indirectas (Lima Centro)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/imagen-valdosa.jpg" alt="San Isidro" />
+              </figure>
+              <p>Techo acústico (Lima Centro)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/imagen-dintel.jfif" alt="San Isidro" />
+              </figure>
+              <p>Intalación de cobertura en Drywall (Breña)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img
+                  src="./assets/img/imagen-candelabro.jfif"
+                  alt="San Isidro"
+                />
+              </figure>
+              <p>Instalación de cielo razo con detalles (San Isidro)</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/rieles.jpg" alt="San Isidro" />
+              </figure>
+              <p>Último proyecto en proceso</p>
+            </div>
+            <div class="carousel--primary-row">
+              <figure>
+                <img src="./assets/img/drywall-pared.jpg" alt="San Isidro" />
+              </figure>
+              <p>Último proyecto en proceso</p>
+            </div>
+          </div>
+
+          <button id="main--btn-rigth">
+            <span class="fas fa-angle-right"></span>
+          </button>
+        </div>
       </section>
     </main>
+
+    <!-- pie de página -->
     <footer class="footer">
       <div class="footer--container">
         <div class="footer--text">
@@ -171,5 +222,6 @@
         </figure>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
