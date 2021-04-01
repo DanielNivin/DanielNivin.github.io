@@ -29,11 +29,18 @@
 /*carousel imagenes*/
 
 .main--carousel-image {
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
 }
 
 .carousel--primary-row {
-  min-width: 39.2vw;
+  min-width: 40vw;
   scroll-snap-align: inherit;
+}
+
+#main--btn-left {
+  left: -60px;
+}
+#main--btn-rigth {
+  right: -60px;
 }
